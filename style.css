@@ -1,0 +1,512 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: none; 
+    color: inherit;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+header .nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .nav .btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header .nav .btn:hover {
+    background-color: #e0a800;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e0a800;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.filters .filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters label {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.filters input,
+.filters select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.filters .btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filters .btn:hover {
+    background-color: #e0a800;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.car-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #444;
+}
+
+.car-card .car-details {
+    margin-top: 10px;
+}
+
+.car-card .car-details h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.car-card .car-details p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.car-card .car-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.car-card .car-price span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.car-card .btn-book {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.car-card .btn-book:hover {
+    background-color: #e0a800;
+}
+
+.car-details-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+}
+
+.details-container {
+    display: flex;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+}
+
+.car-image {
+    flex: 1;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-image img {
+    max-width: 100%;
+    height: auto;
+    border-right: 1px solid #555;
+}
+
+.car-info {
+    flex: 1;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.car-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.car-info p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.car-price h2 {
+    font-size: 1.8em;
+    color: #ffc107;
+    margin: 20px 0;
+}
+
+.car-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.car-actions .btn {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.car-actions .btn-date {
+    background-color: #4466ff;
+    color: #fff;
+}
+
+.btn-book {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.car-actions .btn:hover {
+    opacity: 0.9;
+}
+
+.btn-edit {
+    background-color: blue;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete {
+    background-color: red;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.registration-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.registration-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.registration-page form {
+    background-color: #333;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.registration-page .form-group {
+    margin-bottom: 20px;
+}
+
+.registration-page .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1em;
+    box-sizing: border-box;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.registration-page .form-group input::placeholder {
+    color: #aaa;
+}
+
+.registration-page .form-group input:focus {
+    background-color: #555;
+}
+
+.registration-page button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registration-page button:hover {
+    background-color: #e0a800;
+}
+
+.registration-page .error,
+.registration-page .success {
+    margin-top: 20px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.registration-page .error {
+    color: #ff4d4d;
+}
+
+.registration-page .success {
+    color: #4caf50;
+}
+
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.login-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.login-page form {
+    background-color: #333;
+    padding: 20px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-page label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.login-page input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 20px;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-page input::placeholder {
+    color: #aaa;
+}
+
+.login-page input:focus {
+    background-color: #555;
+}
+
+.login-page button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-page button:hover {
+    background-color: #e0a800;
+}
+
+.login-page .error {
+    color: #ff4d4d;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background-color: #666;
+}
+
+.btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}

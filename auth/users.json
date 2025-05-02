@@ -1,0 +1,20 @@
+[
+    {
+        "name": "asdfsdf",
+        "email": "aodfkadf@gmail.com",
+        "password": "123456",
+        "isAdmin": false
+    },
+    {
+        "name": "Aikahn",
+        "email": "ayxanpauk@mail.ru",
+        "password": "12345678",
+        "isAdmin": false
+    },
+    {
+        "name": "Admin",
+        "email": "admin@ikarrental.hu",
+        "password": "admin",
+        "isAdmin": true
+    }
+]
